@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'JUZ40 Fonts';
-  src: url('assets/dist/theme/fontsJUZ40FONTSRegular.otf') format('otf');
+  src: url('assets/dist/theme/fonts/JUZ40FONTSRegular.otf') format('otf');
 }
 
 
@@ -8,7 +8,7 @@ body {
   width: 100%;
   height: 100%;
   font-family: "JUZ40 Fonts";
-  src: url('assets/dist/theme/fontsJUZ40FONTSRegular.otf');
+  src: url('assets/dist/theme/fonts/JUZ40FONTSRegular.otf');
 
   text-transform: uppercase;
   background-color: var(--bg-color);
@@ -402,7 +402,7 @@ nav {
 .aiana-desc {
   font-size: 20px;
   font-family: "JUZ40 Fonts";
-  src: url('assets/dist/theme/fontsJUZ40FONTSRegular.otf');
+  src: url('assets/dist/theme/fonts/JUZ40FONTSRegular.otf');
   color: var(--text-color) !important;
   font-weight: normal;
   text-transform: none;
