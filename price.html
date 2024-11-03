@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мини-курс / Реквизиттер</title>
+	<link rel="icon" type="image/png" href="assets/images/hero/logo.png" />
+    <!-- Swiper styles -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <!-- Shader Effect styles -->
+    <link
+      rel="stylesheet"
+      href="assets/dist/lib/swiperSlider/swiper-gl.min.css"
+    />
+
+    <!-- font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="assets/dist/framework/bootstrap/css/bootstrap.min.css"
+    />
+
+    <!-- Theme Files -->
+    <link rel="stylesheet" href="assets/dist/theme/css/color.css" />
+    <link rel="stylesheet" href="assets/dist/theme/css/theme.css" />
+    <link rel="stylesheet" href="assets/dist/theme/css/responsive.css" />
+    <link rel="stylesheet" href="assets/dist/theme/css/animation.css" />
+  </head>
+  <body class="position-relative">
+
+
+    <div id="scroll-content">
+      <div class="overflow-hidden">
+        <!-- aiana header -->
+        <header id="top">
+          <!-- navigation -->
+          <nav class="d-flex align-items-center flex-wrap">
+            <!-- logo  -->
+            <div class="logo">
+              <img src="assets/images/hero/logo.png" alt="Logo" />
+              CRYPTO-ALISHER
+            </div>
+			<button class="z-3 aiana-button" style="margin-top:0px;"><a href="index.html" style="color:white">Кері қайту</a></button>
+
+            </div>
+          </nav>
+		  
+
+          <!-- hero section  -->
+          <section class="aiana-hero">
+            <div class="container position-relative z-2">
+              <div class="row align-items-center">
+                <!-- hero section content -->
+                <div class="col-md-12 tab-100 position-relative z-3">
+                  <div class="mb-5 d-flex justify-content-center">
+  <div class="col-md-4 sm-sm-100 mt-5 tab-50">
+    <div class="text-center">
+	<p class="highlightText5 text-center"><span style="font-size: 55px">Реквизиттер</span></p>
+		<img src="assets/images/hero/kaspi.png" width="128" alt="Kaspi" />
+	  <p class="highlightText4 text-center"><span style="color:white">
+	  4400 4302 3173 8854<br>
+Zhuldyz Abdulaziz</p>
+
+			  <p class="highlightText8 text-center"><span id="copyMessage" style="display: none;"style="color:white" style="font-size: 10px"></p>
+
+        <button id="copyButton" class="z-3 aiana-button">басып көшіріп алуға болады</button>
+		<button class="z-3 aiana-button"><a href="https://wtsp.cc/77471835389" style="color:white"><i class="fab fa-whatsapp"></i> Чекті жіберемін</a></button>
+		  	  <div class="mainImg">
+
+                    <img
+                      src="assets/images/hero/mainImg2.png"
+                      alt="hero Image"
+                    />
+                  </div>
+		
+                
+
+    </div>
+
+  </div>
+
+</div>
+
+<script>
+    function copyTextToClipboard(text) {
+        if (navigator.clipboard) {
+            navigator.clipboard.writeText(text).then(() => {
+                console.log('Text copied to clipboard');
+            }).catch(err => {
+                console.error('Could not copy text: ', err);
+            });
+        } else {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';  // Avoid scrolling to bottom of page
+            document.body.appendChild(textArea);
+            textArea.focus();
+            textArea.select();
+            try {
+                const successful = document.execCommand('copy');
+                console.log(successful ? 'Text copied to clipboard' : 'Copy failed');
+                
+            } catch (err) {
+                console.error('Could not copy text: ', err);
+            }
+            document.body.removeChild(textArea);
+        }
+		displayCopyMessage()
+    }
+	
+	function displayCopyMessage() {
+        const messageElement = document.getElementById('copyMessage');
+        messageElement.style.display = 'block';
+        messageElement.textContent = 'СӘТТІ КӨШІРІП АЛДЫҢЫЗ!';
+        // Hide the message after 3 seconds
+        setTimeout(() => {
+            messageElement.style.display = 'none';
+        }, 3000);
+    }
+
+    // Add event listener to the button
+    document.getElementById('copyButton').addEventListener('click', function() {
+        copyTextToClipboard('4400 4302 3173 8854');
+    });
+</script>
+
+                </div>
+              </div>
+            </div>
+            <div>
+              <img
+                src="assets/images/hero/ai-eye.png"
+                alt="eye"
+                class="hero-eye"
+              />
+            </div>
+            <div class="heroImg">
+              <img src="assets/images/hero/overlay2.png" alt="overlay2" />
+            </div>
+          </section>
+        </header>
+
+        
+
+
+      </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="assets/dist/lib/jQuery/jquery-3.7.1.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="assets/dist/framework/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Shadder effect script -->
+    <script src="assets/dist/lib/swiperSlider/swiper-gl.min.js"></script>
+
+    <!-- circle text -->
+    <script src="https://cdn.jsdelivr.net/gh/peterhry/CircleType@2.3.1/dist/circletype.min.js"></script>
+
+    <!-- gsap -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <!-- gsap scrollTrigger -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+    <!-- gsap scrollto -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollToPlugin.min.js"></script>
+
+    <!-- Smooth Scrollbar -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/smooth-scrollbar/8.8.4/smooth-scrollbar.js"></script>
+
+    <!-- Marquee -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
+
+    <!-- Theme Files -->
+    <script src="assets/dist/theme/js/aiana.js"></script>
+  </body>
+</html>
